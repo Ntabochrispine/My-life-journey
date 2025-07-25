@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome (for social icons if used in header/footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main style="background-color: aqua;">
+        <h1 style="text-align: center;">MY ASPIRATIONS</h1>
+        <p>My main goal is to become the best if not one of the best Software engineers in the world who is able to addle any problem and provide a solution for it in real time.</p>
+        <p>One of my biggest dream is to become a CEO of one of th biggest Tech company in the world.</p>
+        <p>I also have an ambition to become a leader of my nation to be able to serve my people and provide solutions to problems that they are facing. Even though I will not be able tyo be elected as a leader, I will try my best to provide solutions for the problems that the world is facing at the moment. </p>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load header and footer dynamically
+        fetch("header.html").then(res => res.text()).then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+        });
+        fetch("footer.html").then(res => res.text()).then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>

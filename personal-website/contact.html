@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome (for social icons if used in header/footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main style="background-color: aqua;">
+        <h2 style="text-align:center;" >Contact Page</h2>
+        <h3 style="text-align: center;">Welcome to me contact page</h3>
+        <p>Feel free to contact me for any inquery at any time via my official contacts given bellow.</p>
+        <h3>For calls</h3>
+        <p>You can reach my via <h2>+254701542978</h2></p>
+        <h3>WhatsAPP</h3>
+        <P>For WhatsAPP <h2>+254701542978</h2></P>
+        <h4>You can also contact via my Email by clicking send email button below</h4>
+        <a href="mailto:ntabochrispine@gmail.com">Send Email</a>
+            </a>
+            <h5>You can also contact/send you message in the message center provided below.</h5>
+
+<form class="contact-form" onsubmit="return validateForm()">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+</form>
+
+
+        <h2>NOTE:</h2>
+        <h4>For quick responce or assistance you adviced to make a direct call via the contact provided.</h4>
+
+
+<script>
+function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+    }
+    alert("Message sent successfully!");
+    return true;
+}
+</script>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load header and footer dynamically
+        fetch("header.html").then(res => res.text()).then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+        });
+        fetch("footer.html").then(res => res.text()).then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
+

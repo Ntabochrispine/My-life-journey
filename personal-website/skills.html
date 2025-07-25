@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome (for social icons if used in header/footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main style="background-color: aqua;">
+        <section class="content">
+            <h1 style="text-align: center;">Skills</h1>
+            <h3>This page showcases my technical and creative skills.</h3>
+            <h5>Ntabo Chrispine is a experienced software engineer crafting innovative software solutions uniquely suited to meet the dynamic needs of the world's vibrant tech landscape.</h5>
+            <h2>My Skills</h2>
+
+             <div class="container">
+      <div class="texte">
+         <h2>Custom Web Development</h2>
+            <p>Crafting bespoke web solutions to meet unique business needs and enhance online presence.</p>
+          </div>
+      <div class="imag">
+        <img src="web.png">
+
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="texte">
+         <h2>Mobile App Design</h2>
+            <p>Creating intuitive and engaging mobile applications tailored for both Android and iOS platforms.</p>
+          </div>
+      <div class="imag">
+        <img src="ux.png">
+
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="texte">
+         <h2>UI/UX Optimization</h2>
+            <p>Enhancing user experiences with modern, user-centered design techniques for web and mobile.</p>
+          </div>
+      <div class="imag">
+        <img src="ui.png">
+
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="texte">
+         <h2>Backend System Integration</h2>
+            <p>Seamlessly integrating backend systems to ensure smooth, efficient, and reliable operations.</p>
+          </div>
+      <div class="imag">
+        <img src="database.png">
+
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="texte">
+         <h2>Cloud Service Deployment</h2>
+            <p>Deploying robust cloud solutions to enhance scalability, performance, and data security.</p>
+          </div>
+      <div class="imag">
+        <img src="cloud.png">
+
+      </div>
+    </div>
+
+     <div class="container">
+      <div class="texte">
+         <h2>Agile Software Consulting</h2>
+            <p>Providing expert consulting services to adopt agile methodologies for efficient project management.</p>
+          </div>
+      <div class="imag">
+        <img src="agile.png">
+
+      </div>
+    </div>
+
+
+
+            <ul>
+                <li><strong>Programming Languages:</strong> C#, Java, Kotlin, HTML, CSS, JavaScript, Python</li>
+                <li><strong>Web Development:</strong> Responsive design, Bootstrap, REST APIs</li>
+                <li><strong>Mobile Development:</strong> Android (Kotlin)</li>
+                <li><strong>Tools:</strong> Git, GitHub, VS Code, Android Studio</li>
+                <li><strong>Soft Skills:</strong> Teamwork, Communication, Problem-solving</li>
+                <p>And many more others.</p>
+            </ul>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load header and footer dynamically
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
+</body>
+</html>
+

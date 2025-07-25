@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills - My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome (for social icons if used in header/footer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main style="background-color: aqua;">
+        <h1 align="center">My Education journey</h1>
+        <h5>Tertiary Level</h5>
+        <p>Currently I am a student at Zetech University, taking Bachelor of science in Software engineering. Im expecting to be done with with studies by the year 2026 december and graduate the yer 2027.</p>
+        <h5>High school</h5>
+        <p>After my KCPE I joined Eramba PAG mixed secondary school on 9Th January 2018. I took my studies there until 1st April 2022 where I left the school. Later I joined ST Pauls Rioma secondary school on 9th May 2022. I took my studies there for some months. I finished my high school studies that year after completing my KCSE on 23rd December 2022 where I managed to qualify for further studies.</p>
+        <h5>Primary studies</h5>
+        <p>After attaining the age required to start studies, I joined Maroma primary school, a small school located in Kisii county, where I started my studies. After being there for a while, a managed to get to the highest level and be able to do my KCPE examination where I qualified and managed the continue with my studies. </p>
+        <p>I have also been bo able to do online courses which i have completed and certified</p>
+
+    </main>
+      <script src="js/script.js"></script>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header and footer dynamically
+        fetch("header.html").then(res => res.text()).then(data => {
+            document.getElementById("header-placeholder").innerHTML = data;
+        });
+        fetch("footer.html").then(res => res.text()).then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
